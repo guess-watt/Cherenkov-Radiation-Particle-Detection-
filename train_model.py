@@ -10,7 +10,7 @@ import os
 
 # ===============================
 # SETTINGS
-# ===============================
+
 IMG_SIZE = 224
 BATCH_SIZE = 16
 EPOCHS = 30
@@ -117,4 +117,5 @@ plt.plot(history.history["accuracy"], label="Train Accuracy")
 plt.plot(history.history["val_accuracy"], label="Validation Accuracy")
 plt.legend()
 plt.title("Model Accuracy")
+
 plt.savefig("training_plot.png")
