@@ -14,6 +14,7 @@ classes = {
     "proton": {"blur": 5, "noise": 20, "thickness": 4, "brightness": 0.9}
 }
 
+
 splits = ["train", "validation", "test"]
 
 def make_dirs():
@@ -89,5 +90,6 @@ for cls, params in classes.items():
             split = "test"
 
         cv2.imwrite(f"{BASE_DIR}/{split}/{cls}/{cls}_{i}.png", img)
+
 
 print("Realistic dataset generation completed.")
