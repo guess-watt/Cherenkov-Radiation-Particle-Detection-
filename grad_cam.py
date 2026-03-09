@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing import image
 
 # ===============================
 # SETTINGS
-# ===============================
+
 MODEL_PATH = "particle_classifier.h5"
 IMG_PATH = "dataset/test/electron/electron_260.png"  # change image if needed
 IMG_SIZE = 224
@@ -80,5 +80,6 @@ plt.subplot(1,3,3)
 plt.title("Overlay")
 plt.imshow(cv2.cvtColor(overlay, cv2.COLOR_BGR2RGB))
 plt.axis("off")
+
 
 plt.show()
