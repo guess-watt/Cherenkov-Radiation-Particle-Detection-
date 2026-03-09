@@ -5,6 +5,7 @@ import cv2
 import os
 from gradcam_utils import make_gradcam
 
+
 app = Flask(__name__)
 
 UPLOAD_FOLDER = "static/uploads"
@@ -69,4 +70,5 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
+
     app.run(debug=True)
