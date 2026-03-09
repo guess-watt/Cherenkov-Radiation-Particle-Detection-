@@ -4,6 +4,7 @@ import cv2
 
 IMG_SIZE = 224
 
+
 def make_gradcam(model, img_array, last_conv_layer_name):
     grad_model = tf.keras.models.Model(
         [model.inputs],
@@ -23,5 +24,6 @@ def make_gradcam(model, img_array, last_conv_layer_name):
 
     heatmap = np.maximum(heatmap, 0)
     heatmap /= np.max(heatmap) if np.max(heatmap) != 0 else 1
+
 
     return heatmap
