@@ -2,7 +2,6 @@ import os
 import cv2
 import numpy as np
 import random
-
 IMG_SIZE = 224
 IMAGES_PER_CLASS = 300
 BASE_DIR = "dataset"
