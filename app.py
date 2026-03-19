@@ -5,7 +5,6 @@ import cv2
 import os
 from gradcam_utils import make_gradcam
 
-
 app = Flask(__name__)
 
 UPLOAD_FOLDER = "static/uploads"
