@@ -4,7 +4,6 @@ import cv2
 
 IMG_SIZE = 224
 
-
 def make_gradcam(model, img_array, last_conv_layer_name):
     grad_model = tf.keras.models.Model(
         [model.inputs],
