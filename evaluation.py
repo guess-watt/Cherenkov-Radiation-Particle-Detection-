@@ -3,7 +3,6 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 from sklearn.metrics import confusion_matrix, classification_report
 
-
 # Load trained model
 model = tf.keras.models.load_model("particle_classifier.h5")
 # (Use this because I can see this file in your folder)
