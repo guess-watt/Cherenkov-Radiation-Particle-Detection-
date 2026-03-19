@@ -4,7 +4,6 @@ import cv2
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-
 # ===============================
 # SETTINGS
 
