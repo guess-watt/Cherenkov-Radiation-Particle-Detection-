@@ -7,7 +7,6 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
 import os
-
 # ===============================
 # SETTINGS
 
